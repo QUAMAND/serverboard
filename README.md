@@ -29,8 +29,8 @@ AFK(`Away From Keyboard` / `잠수`) 중인 플레이어도 표시합니다.
 현재 서버의 **날씨**를 표시합니다.
 - `minecraft:overworld`를 기준으로 합니다.
 
-## todo
-dedicated server일 때, 발전과제 사용하지 않게 수정
+### todo
+시간 동기화 버그 고치기
 
 <br/>
 
