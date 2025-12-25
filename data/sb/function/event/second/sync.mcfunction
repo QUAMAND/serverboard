@@ -11,6 +11,7 @@ function sb:src/time/setter with storage sb:time start
 
 # 동기화 데이터 제거
 fill 29999983 0 29999983 29999983 1 29999983 air
+forceload remove 29999983 29999983
 data remove storage sb:time setup
 
 # 트리거 해제

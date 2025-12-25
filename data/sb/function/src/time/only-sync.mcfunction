@@ -1,3 +1,6 @@
 scoreboard players set #SecondTrigger serverboard 1
 
-function sb:src/time/setup
+execute in overworld run function sb:src/time/setup
+
+# 5분마다 동기화 확인
+schedule function sb:src/time/only-sync 6000t

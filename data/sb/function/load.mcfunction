@@ -10,7 +10,7 @@ execute if score #init serverboard matches 1 run return 0
 
 # 생성
 scoreboard objectives remove serverboard
-scoreboard objectives add serverboard dummy [{bold:1b,text:""},{nbt:"title",storage:"sb:",interpret:1b}]
+scoreboard objectives add serverboard dummy [{shadow_color:-16777216,bold:1b,text:""},{nbt:"title",storage:"sb:",interpret:1b}]
 scoreboard objectives setdisplay sidebar serverboard
    scoreboard players set #init serverboard 1
 
@@ -26,7 +26,7 @@ scoreboard objectives setdisplay sidebar serverboard
 # 집계
    function sb:src/counting
 # 시간
-   function sb:src/time/setup
-   # 초 동기화(0.000과 0.005같은 1틱 차이를 없애기 위함)
-      schedule function sb:src/time/only-sync 1s
+   execute in overworld run function sb:src/time/setup
+   # 초 동기화(0.00과 0.05같은 1틱 차이를 없애기 위함)
+      schedule function sb:src/time/only-sync 101t replace
       #function sb:event/second/main
