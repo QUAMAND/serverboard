@@ -1,5 +1,10 @@
+advancement grant @a only sb:tick
+
+# 스토리지 초기화
+function sb:init/storage
+
 # 로드 메시지
-tellraw @a [{bold:true,text:"",shadow_color:-16777216},{bold:false,text:"[ "},{color:"#3AF2FF","text":"S"},{color:"#38EBF8","text":"e"},{color:"#37E4F0","text":"r"},{color:"#35DDE9","text":"v"},{color:"#33D6E1","text":"e"},{color:"#31CFDA","text":"r"},{color:"#30C8D2","text":"B"},{color:"#2EC1CB","text":"o"},{color:"#2CBAC3","text":"a"},{color:"#2AB3BC","text":"r"},{color:"#27A5AD","text":"d"},{bold:false,text:" ] datapack <- "},{"underlined":true,color:"green",text:"Enabled"}]
+tellraw @a [{bold:1b,text:"",shadow_color:-16777216},{bold:0b,text:"[ "},{nbt:"title",storage:"sb:",interpret:1b},{bold:0b,text:" ] datapack <- "},{"underlined":1b,color:"green",text:"Enabled"}]
 
 # 점수판
 # 존재 여부
@@ -7,17 +12,21 @@ tellraw @a [{bold:true,text:"",shadow_color:-16777216},{bold:false,text:"[ "},{c
 
 # 생성
 scoreboard objectives remove serverboard
-scoreboard objectives add serverboard dummy ["",{bold:true,text:"Status"}]
+scoreboard objectives add serverboard dummy [{bold:1b,text:""},{nbt:"title",storage:"sb:",interpret:1b}]
 scoreboard objectives setdisplay sidebar serverboard
+   scoreboard players set #5 serverboard 5
+   scoreboard players set #24 serverboard 24
+   scoreboard players set #60 serverboard 60
    #scoreboard players set #init serverboard 1
+   scoreboard players set #SecondTrigger serverboard 1
 
-   scoreboard players set 00 serverboard 0
-   scoreboard players set 01_ serverboard 0
-   scoreboard players set 02 serverboard 0
-   scoreboard players set 03_ serverboard 0
-   scoreboard players set 04 serverboard 0
-   scoreboard players set 05_ serverboard 0
-   scoreboard players set 06 serverboard 0
+# 스코어 초기화
+   function sb:init/score
 
-# 인위적인 빈 값
-   function sb:init/null
+# 집계
+   function sb:src/counting
+# 시간
+   function sb:src/time/setup
+   # 초 동기화(0.000과 0.005같은 1틱 차이를 없애기 위함)
+      schedule function sb:src/time/only-sync 1s
+      #function sb:event/second/main
