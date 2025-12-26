@@ -1,0 +1,1 @@
+$scoreboard players display numberformat 01 serverboard fixed ["",{shadow_color:[0,0,0,1]$(color),bold:1b,score:{name:"#EntityCount",objective:serverboard}}," (",{bold:1b,text:"$(text)"$(color)},")"]

@@ -1,3 +1,16 @@
+# id score
+scoreboard players set #id serverboard.id 0
+
+# main score
+# const
+   scoreboard players set #init serverboard 1
+   scoreboard players set #24 serverboard 24
+   scoreboard players set #60 serverboard 60
+   scoreboard players set #SyncTiming serverboard 5
+
+scoreboard players set #SecondTrigger serverboard 1
+scoreboard players set #isDedicated serverboard 0
+
 scoreboard players set 00_ serverboard 0
 scoreboard players set 01 serverboard 0
 scoreboard players set 02_ serverboard 0

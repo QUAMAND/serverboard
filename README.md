@@ -5,6 +5,7 @@
 
 > 불러오기: `/reload`  
 > 삭제하기: `/function sb:uninstall {key:QUAM12}`  
+> 초기화: `/scoreboard players set #init serverboard 0`, `/reload` | `/function sb:load`
 
 # ⚙️ 기능
 ## 1. 엔티티의 수 집계
@@ -23,14 +24,13 @@ AFK(`Away From Keyboard` / `잠수`) 중인 플레이어도 표시합니다.
 
 ### options
 - 인게임 - 현실 시간 동기화
-- 연도와 날짜, 요일 표시
 
 ## 4. 현재 날씨를 표시합니다.
 현재 서버의 **날씨**를 표시합니다.
 - `minecraft:overworld`를 기준으로 합니다.
 
 ### todo
-시간 동기화 버그 고치기
+현실 시간과 게임 내 시간(해와 달, 동기화)
 
 <br/>
 

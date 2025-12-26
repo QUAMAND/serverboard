@@ -1,1 +1,4 @@
 data modify storage sb: title set value [{color:"#3AF2FF","text":"S"},{color:"#38EBF8","text":"e"},{color:"#37E4F0","text":"r"},{color:"#35DDE9","text":"v"},{color:"#33D6E1","text":"e"},{color:"#31CFDA","text":"r"},{color:"#30C8D2","text":"B"},{color:"#2EC1CB","text":"o"},{color:"#2CBAC3","text":"a"},{color:"#2AB3BC","text":"r"},{color:"#27A5AD","text":"d"}]
+
+data remove storage sb:data p
+data remove storage sb:data m
