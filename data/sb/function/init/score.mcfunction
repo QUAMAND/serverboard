@@ -20,7 +20,6 @@ scoreboard players set 05 serverboard 0
 scoreboard players set 06_ serverboard 0
 scoreboard players set 07 serverboard 0
 
-
 scoreboard players display name 00_ serverboard ''
 scoreboard players display name 02_ serverboard ''
 scoreboard players display name 04_ serverboard ''

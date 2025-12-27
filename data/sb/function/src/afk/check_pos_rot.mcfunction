@@ -1,10 +1,7 @@
 rotate @s ~ ~
-
 # 좌표와 시선을 임시로 저장함
 data modify storage sb:data m.pos set from entity @s Pos
 data modify storage sb:data m.rot set from entity @s Rotation
-
-# entity = marker
 kill
 
 # m.pos == p.pos[x] -> 0(같음)

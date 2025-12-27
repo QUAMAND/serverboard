@@ -20,6 +20,7 @@ tag @a remove sb.player
 advancement revoke @a only sb:afk
 
 schedule clear sb:src/afk/schedule
+schedule clear sb:src/weather/schedule
 schedule clear sb:src/time/only-sync
 
 datapack disable "file/serverboard"

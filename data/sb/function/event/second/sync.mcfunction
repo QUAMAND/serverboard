@@ -6,7 +6,6 @@ data modify storage sb:time start.t set string block 29999983 0 29999983 LastOut
 data modify storage sb:time start.h set string storage sb:time start.t 0 2
 data modify storage sb:time start.m set string storage sb:time start.t 3 5
 data modify storage sb:time start.s set string storage sb:time start.t 6 8
-
 function sb:src/time/setter with storage sb:time start
 
 # 동기화 데이터 제거
