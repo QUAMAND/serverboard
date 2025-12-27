@@ -24,10 +24,12 @@ scoreboard objectives setdisplay sidebar serverboard
 
 # 집계
    function sb:src/counting/schedule
+# afk
+   function sb:src/afk/schedule
 # 시간
    execute in overworld run function sb:src/time/setup
    # 초 동기화(0.00과 0.05같은 1틱 차이를 없애기 위함)
       schedule function sb:src/time/only-sync 101t replace
       #function sb:event/second/main
-# afk
-   function sb:src/afk/schedule
+# 날씨
+   function sb:src/weather/schedule
