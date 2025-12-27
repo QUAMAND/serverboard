@@ -26,9 +26,6 @@ AFK(`Away From Keyboard` / `잠수`) 중인 플레이어도 표시합니다.
 현재 서버의 **날씨**를 표시합니다.
 - `minecraft:overworld`를 기준으로 합니다.
 
-# todo
-날씨 만들기
-
 <br/>
 
 ## Fin.
