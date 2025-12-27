@@ -1,0 +1,1 @@
+$scoreboard players display numberformat 05 serverboard fixed ["",{shadow_color:[0,0,0,1]$(color),bold:1b,translate:"$(text)"}]

@@ -21,4 +21,4 @@ scoreboard players operation #m1 serverboard %= #60 serverboard
 scoreboard players operation #h1 serverboard %= #24 serverboard
 
 # 점수판에 적용
-scoreboard players display numberformat 07 serverboard fixed [{shadow_color:[0,0,0,1],color:"#99FFFF",bold:1b,text:""},{score:{name:"#h1",objective:serverboard}},":",{score:{name:"#m1",objective:serverboard}},":",{score:{name:"#s1",objective:serverboard}}]
+scoreboard players display numberformat 07 serverboard fixed [{shadow_color:[0,0,0,1],color:"#BBFFFF",bold:1b,text:""},{score:{name:"#h1",objective:serverboard}},":",{score:{name:"#m1",objective:serverboard}},":",{score:{name:"#s1",objective:serverboard}}]

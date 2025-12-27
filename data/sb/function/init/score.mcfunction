@@ -34,7 +34,7 @@ scoreboard players display numberformat 06_ serverboard blank
 scoreboard players display name 01 serverboard {bold:1b,shadow_color:[0,0,0,.5],color:"#FFFF55",translate:"argument.entity.selector.self"}
 scoreboard players display name 03 serverboard {bold:1b,shadow_color:[0,0,0,.5],color:"#FFFF77",translate:"entity.minecraft.player"}
 scoreboard players display name 05 serverboard {bold:1b,shadow_color:[0,0,0,.5],color:"#FFFF99",translate:"soundCategory.weather"}
-scoreboard players display name 07 serverboard [{bold:1b,shadow_color:[0,0,0,.5],color:"#FFFFBB",translate:"mco.time.now"}, " ->"]
+scoreboard players display name 07 serverboard {bold:1b,shadow_color:[0,0,0,.5],color:"#FFFFBB",translate:"mco.time.now"}
 
 scoreboard players display numberformat 01 serverboard blank
 scoreboard players display numberformat 03 serverboard blank
